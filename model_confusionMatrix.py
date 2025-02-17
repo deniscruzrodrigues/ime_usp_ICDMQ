@@ -7,10 +7,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, classification_report
 
 #Carrega os dados dos clientes que receberam empréstimos
-retail_data = pd.read_csv('Retail_Data.csv')
+retail_data = pd.read_csv('Retail_Data.csv', on_bad_lines='skip', sep=',')
 
 #Carrega os dados dos potenciais clientes
-potential_customers = pd.read_csv('Potential_Customers.csv')
+potential_customers = pd.read_csv('Potential_Customers.csv', on_bad_lines='skip', sep=',')
 
 #Seleciona as features e o target
 features = ['anos_com_banco', 'estado_marital', 'nivel_educacao', 'status_emprego', 'renda_mensal', 'balanco_total']
