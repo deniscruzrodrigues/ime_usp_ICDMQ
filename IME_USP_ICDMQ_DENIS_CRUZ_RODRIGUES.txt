@@ -1,0 +1,78 @@
+IME SUP
+VERÃO 2025 ICDMQ
+DENIS CRUZ RODRIGUES
+---
+CONTEÚDO:
+Diretório compactado contendo:
+- Jupyter Notebook "data_analysis_v1.ipynb"
+- Descrição da atividade "Descrição.pdf"
+- Este arquivo "IME_USP_ICDMQ_DENIS_CRUZ_RODRIGUES.txt"
+- Conjunto "Potential_Customers.csv"
+- Conjunto "Potential_Customers.txt"
+- Conjunto "Retail_data.csv"
+- Conjunto "Retail_data.txt"
+- Diretório ".ipynb_checkpoints"
+- Diretório ".git"
+- Link do GitHub Public: https://github.com/deniscruzrodrigues/ime_usp_ICDMQ
+---
+ATIVIDADE:
+Você é parte de um time de ciência de dados em um grande banco com sede em diversos países.
+O gerente de relacionamentos do banco ouviu sobre “métodos quantitativos” em um conferência e começou a pensar se essa ferramenta poderia ajuda-lo em suas tarefas. Uma vez que o time de relacionamentos não dispõe de analistas ciêntistas de dados eles te convidaram para uma reunião para entender as possibilidades. Eles pediram para você “analisar os dados” e te enviaram de antemão dois conjuntos de dados.
+O primeiro conjunto, entitulado Retail_data.csv contém informações sobre clientes escolhidos aleatóriamente que receberam ou não um empréstimo ao longo dos últimos anos, além de dados adicionais sobre os clientes como  a quantidade de anos que o cliente está com o banco, estado marital, nível de educação, status de empregabilidade, renda mensal e balanço total na conta.
+O segundo conjunto de dados, entitulado Potential_Customers.csv contém os mesmos dados sobre potenciais clientes exceto a informação sobre o empréstimo. O gerente de relacionamentos gostaria de saber quais potenciais clientes ele deveria abordar para oferecer um empréstimo.
+---
+TAREFA:
+1 – Prepare um conjunto de perguntas com base nos dados para iniciar uma conversa durante a reunião. (25% da nota final) 
+2 – Realize uma análise exploratória dos dados, indicando padrões interessantes para o cliente de relacionamentos. (25% da nota final) 
+3 – Crie um modelo para prever quais potenciais clientes deveriam ser abordados. (40% da nota final) 
+4 – Valide seu(s) modelo(s) utilizando o conceito de matriz de confusão. (10% da nota final). 
+---
+FILE: data_analysis_v1.ipynb
+CONTENT:
+- Importa as libs necessárias
+- Ajuste CSVs
+- ETL
+- Questões e análise exploratória dos dados para auxiliar com as respostas:
+	- Q: Quais características dos clientes que possuem empréstimos são mais comuns?
+	- A: Pessoas casadas, com título Bachelor, empregadas em empresas privadas, do sexo masculino, com renda de 50k a 100k, com idade entre 30 e 40 anos, com 10 a 20 anos de experiência no banco, com 10 a 20 anos de emprego atual, com 10 a 20 anos de endereço atual, com saldo atual de 0 a 10k são as características mais comuns dos clientes que possuem empréstimos.
+	
+	- Q: Existe uma faixa de renda mensal que é mais propensa a receber empréstimos?
+	- A: A faixa de renda mensal de até 3k é a mais propensa a receber empréstimos.
+	
+	- Q: O tempo de relacionamento com o banco influencia a probabilidade de um cliente receber um empréstimo?
+	- A: Pessoas com relacionamento com o banco entre 10 a 20 anos tem maior probabilidade de receber um empréstimo.
+	
+	- Q: A idade dos clientes influencia a probabilidade de um cliente receber um empréstimo?
+	- A: Pessoas com idade entre 30 e 40 anos de idade tem maior probabilidade de receber um empréstimo.
+	
+	- Q: O saldo atual dos clientes influencia a probabilidade de um cliente receber um empréstimo?
+	- A: O saldo atual dos clientes até 10k tem maior probabilidade de receber um empréstimo.
+	
+	- Q: O tempo de emprego atual dos clientes influencia a probabilidade de um cliente receber um empréstimo?
+	- A: Pessoas com 10 a 20 anos no emprego atual tem maior probabilidade de receber um empréstimo.
+	
+	- Q: Quais segmentos de clientes com características demográficas específicas são mais propensos a receber empréstimos?
+	- A: Pessoas casadas, com título Bachelor, empregadas em empresas privadas, são as características mais comuns dos clientes que possuem empréstimos.
+	
+	- Q: O status de empregabilidade tem impacto significativo na decisão de concessão de empréstimos?
+	- A: Sim, é fator de decisão. Pessoas empregadas tem muita probabilidade de ter sucesso ao tomar empréstimo, vide gráfico com destaque para empregados privados, públicos e aposentados.
+	
+	- Q: Como os potenciais clientes se comparam aos clientes que já possuem emprétimos em termos de perfil e comportamento financeiro?
+	- A: Os potenciais clientes são mais jovens, casados, com menos tempo de relacionamento com o banco, com menor renda mensal, com menor saldo atual, com menor tempo de emprego atual, com menor tempo de endereço atual
+	
+	- Q: Como a renda mensal influencia a decisão de concessão de empréstimos?
+	- A: A renda mensal influencia a decisão de concessão de empréstimos, pois a distribuição de renda mensal dos clientes com empréstimos é mais alta do que a distribuição de renda mensal dos clientes sem empréstimos.
+
+	- Q: Com quantos anos de relacionamento com o banco em média os clientes recebem empréstimos?
+	- A: Em média os clientes com 6.5 anos de relacionamento com o banco recebem empréstimos.
+
+- Criação e validação do modelo
+- Matriz de confusão para validação do modelo
+- Conclusao: O gerente deve abordar 215 clientes para oferecer empréstimos, com base no modelo de regressão logística.
+
+---
+Qualquer coisa só chamar!
+https://www.linkedin.com/in/denis-rodrigues-1b639537/
++55 11 993993504
+deniscruzrodrigues@linux.com
+denis.cruz-rodrigues@itau-unibanco.com.br
